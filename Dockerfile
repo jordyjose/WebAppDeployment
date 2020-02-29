@@ -7,6 +7,6 @@ COPY target/*.war /usr/local/tomcat/webapps/MavenWebApp.war
 #RUN ln -s /usr/local/tomcat/webapps.dist/host-manager webapps/host-manager
 #RUN ln -s /usr/local/tomcat/webapps.dist/ROOT webapps/ROOT
 
-#RUN ln -s /usr/local/tomcat/webapps/myweb-8.3.2.war   webapps.dist
-#RUN ln -s /usr/local/tomcat/webapps/myweb-8.3.2  webapps.dist
+RUN ln -s /usr/local/tomcat/webapps/MavenWebApp.war   webapps.dist
+RUN ln -s /usr/local/tomcat/webapps/MavenWebApp.war  webapps.dist
 #CMD ["catalina.sh", "run"]
