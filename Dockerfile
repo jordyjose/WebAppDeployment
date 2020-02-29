@@ -6,6 +6,7 @@ COPY target/*.war /usr/local/tomcat/webapps/MavenWebApp.war
 RUN ln -s /usr/local/tomcat/webapps.dist/manager webapps/manager
 RUN ln -s /usr/local/tomcat/webapps.dist/host-manager webapps/host-manager
 RUN ln -s /usr/local/tomcat/webapps.dist/ROOT webapps/ROOT
+RUN ln -s /usr/local/tomcat/webapps/MavenWebApp.war /usr/local/tomcat/work/Catalina/localhost/MavenWebApp
 
 #RUN ln -s /usr/local/tomcat/webapps/MavenWebApp.war   webapps.dist
 #RUN ln -s /usr/local/tomcat/webapps/MavenWebApp.war  webapps.dist
